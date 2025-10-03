@@ -218,7 +218,6 @@ public:
 		}
 
 		// Find next alive player
-		int originalPlayer = currentPlayer;
 		do
 		{
 			currentPlayer = (currentPlayer + 1) % totalPlayers;
