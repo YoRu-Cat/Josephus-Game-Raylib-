@@ -287,13 +287,7 @@ We welcome contributions! Here's how you can help:
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Raylib**: Amazing graphics library that made this visualization possible
 - **Flavius Josephus**: For the historical problem that inspired this implementation
