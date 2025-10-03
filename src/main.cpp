@@ -392,9 +392,9 @@ public:
 
 		if (!gameStarted)
 		{
-			DrawText("⬆⬇ Arrow Keys: Adjust Players (3-20)", panel.x + 20, y, 16, WHITE);
+			DrawText("UP/DOWN Arrow Keys: Adjust Players (3-20)", panel.x + 20, y, 16, WHITE);
 			y += 24;
-			DrawText("⬅➡ Arrow Keys: Change Step Count (1-10)", panel.x + 20, y, 16, WHITE);
+			DrawText("LEFT/RIGHT Arrow Keys: Change Step Count (1-10)", panel.x + 20, y, 16, WHITE);
 			y += 24;
 			DrawText("Q / E Keys: Decrease / Increase Speed", panel.x + 20, y, 16, WHITE);
 			y += 24;
@@ -410,18 +410,18 @@ public:
 
 			if (isPaused)
 			{
-				DrawText("⏸ GAME PAUSED", panel.x + 20, y, 18, {255, 255, 0, 255});
+				DrawText("GAME PAUSED", panel.x + 20, y, 18, {255, 255, 0, 255});
 				y += 30;
 			}
 			else
 			{
-				DrawText("▶ GAME RUNNING", panel.x + 20, y, 18, {0, 255, 127, 255});
+				DrawText("GAME RUNNING", panel.x + 20, y, 18, {0, 255, 127, 255});
 				y += 30;
 			}
 		}
 		else
 		{
-			DrawText("🎉 Game Complete!", panel.x + 20, y, 18, {255, 215, 0, 255});
+			DrawText("Game Complete!", panel.x + 20, y, 18, {255, 215, 0, 255});
 			y += 30;
 		}
 
@@ -543,10 +543,10 @@ public:
 int main()
 {
 	// Initialize in windowed mode first
-	int screenWidth = 1200;
-	int screenHeight = 800;
+	int screenWidth = 1600;
+	int screenHeight = 900;
 
-	SetConfigFlags(FLAG_WINDOW_RESIZABLE);
+	// No config flags needed for non-resizable window
 	InitWindow(screenWidth, screenHeight, "Josephus Elimination Game - Modern GUI");
 	SetTargetFPS(60);
 
